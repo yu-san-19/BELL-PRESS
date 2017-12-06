@@ -1,0 +1,15 @@
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\BELL-PRES.exe.config
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\BELL-PRES.exe
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\BELL-PRES.pdb
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\SmallBasicLibrary.dll
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\SmallBasicLibrary.xml
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.csprojResolveAssemblyReference.cache
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL_PRES.main_form.resources
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.csproj.GenerateResource.Cache
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.exe
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.pdb
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\Interop.WMPLib.dll
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.csproj.ResolveComReference.cache
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\Interop.WMPLib.dll
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\bin\Debug\AxInterop.WMPLib.dll
