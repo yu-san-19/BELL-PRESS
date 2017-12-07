@@ -23,6 +23,9 @@ namespace BELL_PRES
             once_min_box.SelectedIndex = 0;
             twice_min_box.SelectedIndex = 0;
             min_box_5.SelectedIndex = 0;
+            once_sec_box.SelectedIndex = 0;
+            twice_sec_box.SelectedIndex = 0;
+            sec_box_5.SelectedIndex = 0;
             txt_audio_1.Text = Properties.Settings.Default.PlaySoundFile_1;
             txt_audio_2.Text = Properties.Settings.Default.PlaySoundFile_2;
             txt_audio_5.Text = Properties.Settings.Default.PlaySoundFile_3;
@@ -123,9 +126,9 @@ namespace BELL_PRES
         {
             MessageBox.Show("T１：" + once_min_box.SelectedItem.ToString() + "<br/> T2:" + twice_min_box.SelectedItem.ToString() + "<br/> T3:" + min_box_5.SelectedItem.ToString(),
                 "確認!", MessageBoxButtons.OK);
-            int time_1 = ((int.Parse(once_min_box.SelectedItem.ToString()) * 60) + int.Parse(once_sec_box.Text)) * 1000;
-            int time_2 = ((int.Parse(twice_min_box.SelectedItem.ToString()) * 60) + int.Parse(twice_sec_box.Text)) * 1000;
-            int time_3 = ((int.Parse(min_box_5.SelectedItem.ToString()) * 60) + int.Parse(sec_box_5.Text)) * 1000;
+            int time_1 = ((int.Parse(once_min_box.SelectedItem.ToString()) * 60) + int.Parse(once_sec_box.SelectedItem.ToString())) * 1000;
+            int time_2 = ((int.Parse(twice_min_box.SelectedItem.ToString()) * 60) + int.Parse(twice_sec_box.SelectedItem.ToString())) * 1000;
+            int time_3 = ((int.Parse(min_box_5.SelectedItem.ToString()) * 60) + int.Parse(sec_box_5.SelectedItem.ToString())) * 1000;
 
             MessageBox.Show(time_1.ToString() + time_2.ToString() + time_3.ToString(), "確認", MessageBoxButtons.OK);
 

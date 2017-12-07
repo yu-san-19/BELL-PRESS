@@ -38,19 +38,20 @@
             this.Automatic = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.once_min_label = new System.Windows.Forms.Label();
-            this.once_sec_box = new System.Windows.Forms.TextBox();
             this.once_sec_label = new System.Windows.Forms.Label();
             this.once_lab = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.twice_sec_box = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.sec_box_5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.start_btn = new System.Windows.Forms.Button();
             this.stop_btn = new System.Windows.Forms.Button();
+            this.once_min_box = new System.Windows.Forms.ComboBox();
+            this.twice_min_box = new System.Windows.Forms.ComboBox();
+            this.min_box_5 = new System.Windows.Forms.ComboBox();
+            this.once_sec_box = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lab_audio_5 = new System.Windows.Forms.Label();
             this.lab_audio_2 = new System.Windows.Forms.Label();
@@ -61,10 +62,9 @@
             this.txt_audio_2 = new System.Windows.Forms.TextBox();
             this.txt_audio_1 = new System.Windows.Forms.TextBox();
             this.btn_set_audio_1 = new System.Windows.Forms.Button();
-            this.once_min_box = new System.Windows.Forms.ComboBox();
-            this.twice_min_box = new System.Windows.Forms.ComboBox();
-            this.min_box_5 = new System.Windows.Forms.ComboBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.twice_sec_box = new System.Windows.Forms.ComboBox();
+            this.sec_box_5 = new System.Windows.Forms.ComboBox();
             this.Tab.SuspendLayout();
             this.Manual.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -161,26 +161,26 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.59808F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.40191F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel2.Controls.Add(this.once_min_label, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.once_sec_box, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.once_sec_label, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.once_lab, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label3, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.twice_sec_box, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label6, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.sec_box_5, 3, 3);
             this.tableLayoutPanel2.Controls.Add(this.label7, 4, 3);
             this.tableLayoutPanel2.Controls.Add(this.start_btn, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.stop_btn, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.once_min_box, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.twice_min_box, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.min_box_5, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.once_sec_box, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.twice_sec_box, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.sec_box_5, 3, 3);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -196,26 +196,18 @@
             // 
             this.once_min_label.AutoSize = true;
             this.once_min_label.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.once_min_label.Location = new System.Drawing.Point(194, 51);
+            this.once_min_label.Location = new System.Drawing.Point(192, 51);
             this.once_min_label.Margin = new System.Windows.Forms.Padding(3);
             this.once_min_label.Name = "once_min_label";
             this.once_min_label.Size = new System.Drawing.Size(24, 16);
             this.once_min_label.TabIndex = 3;
             this.once_min_label.Text = "分";
             // 
-            // once_sec_box
-            // 
-            this.once_sec_box.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.once_sec_box.Location = new System.Drawing.Point(231, 51);
-            this.once_sec_box.Name = "once_sec_box";
-            this.once_sec_box.Size = new System.Drawing.Size(41, 23);
-            this.once_sec_box.TabIndex = 2;
-            // 
             // once_sec_label
             // 
             this.once_sec_label.AutoSize = true;
             this.once_sec_label.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.once_sec_label.Location = new System.Drawing.Point(278, 51);
+            this.once_sec_label.Location = new System.Drawing.Point(281, 51);
             this.once_sec_label.Margin = new System.Windows.Forms.Padding(3);
             this.once_sec_label.Name = "once_sec_label";
             this.once_sec_label.Size = new System.Drawing.Size(24, 16);
@@ -248,26 +240,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(194, 84);
+            this.label3.Location = new System.Drawing.Point(192, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "分";
             // 
-            // twice_sec_box
-            // 
-            this.twice_sec_box.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.twice_sec_box.Location = new System.Drawing.Point(231, 84);
-            this.twice_sec_box.Name = "twice_sec_box";
-            this.twice_sec_box.Size = new System.Drawing.Size(41, 23);
-            this.twice_sec_box.TabIndex = 8;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(278, 84);
+            this.label4.Location = new System.Drawing.Point(281, 84);
             this.label4.Margin = new System.Windows.Forms.Padding(3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(24, 16);
@@ -289,26 +273,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(194, 118);
+            this.label6.Location = new System.Drawing.Point(192, 118);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(24, 16);
             this.label6.TabIndex = 12;
             this.label6.Text = "分";
             // 
-            // sec_box_5
-            // 
-            this.sec_box_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sec_box_5.Location = new System.Drawing.Point(231, 118);
-            this.sec_box_5.Name = "sec_box_5";
-            this.sec_box_5.Size = new System.Drawing.Size(41, 23);
-            this.sec_box_5.TabIndex = 13;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(278, 118);
+            this.label7.Location = new System.Drawing.Point(281, 118);
             this.label7.Margin = new System.Windows.Forms.Padding(3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 16);
@@ -319,7 +295,7 @@
             // 
             this.start_btn.Location = new System.Drawing.Point(3, 3);
             this.start_btn.Name = "start_btn";
-            this.start_btn.Size = new System.Drawing.Size(139, 42);
+            this.start_btn.Size = new System.Drawing.Size(137, 42);
             this.start_btn.TabIndex = 15;
             this.start_btn.Text = "Start";
             this.start_btn.UseVisualStyleBackColor = true;
@@ -329,10 +305,140 @@
             // 
             this.stop_btn.Location = new System.Drawing.Point(3, 153);
             this.stop_btn.Name = "stop_btn";
-            this.stop_btn.Size = new System.Drawing.Size(139, 41);
+            this.stop_btn.Size = new System.Drawing.Size(137, 41);
             this.stop_btn.TabIndex = 16;
             this.stop_btn.Text = "Stop";
             this.stop_btn.UseVisualStyleBackColor = true;
+            // 
+            // once_min_box
+            // 
+            this.once_min_box.FormattingEnabled = true;
+            this.once_min_box.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.once_min_box.Location = new System.Drawing.Point(146, 51);
+            this.once_min_box.Name = "once_min_box";
+            this.once_min_box.Size = new System.Drawing.Size(40, 20);
+            this.once_min_box.TabIndex = 17;
+            // 
+            // twice_min_box
+            // 
+            this.twice_min_box.FormattingEnabled = true;
+            this.twice_min_box.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.twice_min_box.Location = new System.Drawing.Point(146, 84);
+            this.twice_min_box.Name = "twice_min_box";
+            this.twice_min_box.Size = new System.Drawing.Size(40, 20);
+            this.twice_min_box.TabIndex = 18;
+            // 
+            // min_box_5
+            // 
+            this.min_box_5.FormattingEnabled = true;
+            this.min_box_5.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.min_box_5.Location = new System.Drawing.Point(146, 118);
+            this.min_box_5.Name = "min_box_5";
+            this.min_box_5.Size = new System.Drawing.Size(40, 20);
+            this.min_box_5.TabIndex = 19;
+            // 
+            // once_sec_box
+            // 
+            this.once_sec_box.FormattingEnabled = true;
+            this.once_sec_box.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.once_sec_box.Location = new System.Drawing.Point(229, 51);
+            this.once_sec_box.Name = "once_sec_box";
+            this.once_sec_box.Size = new System.Drawing.Size(46, 20);
+            this.once_sec_box.TabIndex = 20;
             // 
             // tabPage1
             // 
@@ -434,10 +540,10 @@
             this.btn_set_audio_1.UseVisualStyleBackColor = true;
             this.btn_set_audio_1.Click += new System.EventHandler(this.btn_set_audio_1_Click);
             // 
-            // once_min_box
+            // twice_sec_box
             // 
-            this.once_min_box.FormattingEnabled = true;
-            this.once_min_box.Items.AddRange(new object[] {
+            this.twice_sec_box.FormattingEnabled = true;
+            this.twice_sec_box.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -448,16 +554,66 @@
             "7",
             "8",
             "9",
-            "10"});
-            this.once_min_box.Location = new System.Drawing.Point(148, 51);
-            this.once_min_box.Name = "once_min_box";
-            this.once_min_box.Size = new System.Drawing.Size(40, 20);
-            this.once_min_box.TabIndex = 17;
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.twice_sec_box.Location = new System.Drawing.Point(229, 84);
+            this.twice_sec_box.Name = "twice_sec_box";
+            this.twice_sec_box.Size = new System.Drawing.Size(46, 20);
+            this.twice_sec_box.TabIndex = 21;
             // 
-            // twice_min_box
+            // sec_box_5
             // 
-            this.twice_min_box.FormattingEnabled = true;
-            this.twice_min_box.Items.AddRange(new object[] {
+            this.sec_box_5.FormattingEnabled = true;
+            this.sec_box_5.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -468,31 +624,61 @@
             "7",
             "8",
             "9",
-            "10"});
-            this.twice_min_box.Location = new System.Drawing.Point(148, 84);
-            this.twice_min_box.Name = "twice_min_box";
-            this.twice_min_box.Size = new System.Drawing.Size(40, 20);
-            this.twice_min_box.TabIndex = 18;
-            // 
-            // min_box_5
-            // 
-            this.min_box_5.FormattingEnabled = true;
-            this.min_box_5.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.min_box_5.Location = new System.Drawing.Point(148, 118);
-            this.min_box_5.Name = "min_box_5";
-            this.min_box_5.Size = new System.Drawing.Size(40, 20);
-            this.min_box_5.TabIndex = 19;
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.sec_box_5.Location = new System.Drawing.Point(229, 118);
+            this.sec_box_5.Name = "sec_box_5";
+            this.sec_box_5.Size = new System.Drawing.Size(46, 20);
+            this.sec_box_5.TabIndex = 22;
             // 
             // main_form
             // 
@@ -523,18 +709,15 @@
         private System.Windows.Forms.Button once;
         private System.Windows.Forms.TabPage Automatic;
         private System.Windows.Forms.Button time_5;
-        private System.Windows.Forms.TextBox once_sec_box;
         private System.Windows.Forms.Label once_lab;
         private System.Windows.Forms.Label once_sec_label;
         private System.Windows.Forms.Label once_min_label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox twice_sec_box;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox sec_box_5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button start_btn;
         private System.Windows.Forms.Button stop_btn;
@@ -552,5 +735,8 @@
         private System.Windows.Forms.ComboBox twice_min_box;
         private System.Windows.Forms.ComboBox min_box_5;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.ComboBox once_sec_box;
+        private System.Windows.Forms.ComboBox twice_sec_box;
+        private System.Windows.Forms.ComboBox sec_box_5;
     }
 }
