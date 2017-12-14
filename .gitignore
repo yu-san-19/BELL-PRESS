@@ -288,4 +288,6 @@ __pycache__/
 *.xsd.cs
 
 #MP3 Music File
-/bin/Debug/*.mp3
+/presen-1.mp3
+/presen-2.mp3
+/presen-5.mp3
