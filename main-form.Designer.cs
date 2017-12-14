@@ -52,7 +52,12 @@
             this.twice_min_box = new System.Windows.Forms.ComboBox();
             this.min_box_5 = new System.Windows.Forms.ComboBox();
             this.once_sec_box = new System.Windows.Forms.ComboBox();
+            this.twice_sec_box = new System.Windows.Forms.ComboBox();
+            this.sec_box_5 = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.clear_fifth = new System.Windows.Forms.Button();
+            this.clear_twice = new System.Windows.Forms.Button();
+            this.clear_once = new System.Windows.Forms.Button();
             this.lab_audio_5 = new System.Windows.Forms.Label();
             this.lab_audio_2 = new System.Windows.Forms.Label();
             this.lab_audio_1 = new System.Windows.Forms.Label();
@@ -63,8 +68,6 @@
             this.txt_audio_1 = new System.Windows.Forms.TextBox();
             this.btn_set_audio_1 = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.twice_sec_box = new System.Windows.Forms.ComboBox();
-            this.sec_box_5 = new System.Windows.Forms.ComboBox();
             this.Tab.SuspendLayout();
             this.Manual.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -120,7 +123,7 @@
             this.time_5.TabIndex = 2;
             this.time_5.Text = "FIFTH";
             this.time_5.UseVisualStyleBackColor = true;
-            this.time_5.Click += new System.EventHandler(this.time_5_Click);
+            this.time_5.Click += new System.EventHandler(this.Time_5_Click);
             // 
             // twice
             // 
@@ -131,7 +134,7 @@
             this.twice.TabIndex = 1;
             this.twice.Text = "TWICE";
             this.twice.UseVisualStyleBackColor = true;
-            this.twice.Click += new System.EventHandler(this.twice_Click);
+            this.twice.Click += new System.EventHandler(this.Twice_Click);
             // 
             // once
             // 
@@ -142,7 +145,7 @@
             this.once.TabIndex = 0;
             this.once.Text = "ONCE";
             this.once.UseVisualStyleBackColor = true;
-            this.once.Click += new System.EventHandler(this.once_Click);
+            this.once.Click += new System.EventHandler(this.Once_Click);
             // 
             // Automatic
             // 
@@ -163,7 +166,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel2.Controls.Add(this.once_min_label, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.once_sec_label, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.once_lab, 0, 1);
@@ -196,7 +199,7 @@
             // 
             this.once_min_label.AutoSize = true;
             this.once_min_label.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.once_min_label.Location = new System.Drawing.Point(192, 51);
+            this.once_min_label.Location = new System.Drawing.Point(189, 51);
             this.once_min_label.Margin = new System.Windows.Forms.Padding(3);
             this.once_min_label.Name = "once_min_label";
             this.once_min_label.Size = new System.Drawing.Size(24, 16);
@@ -207,7 +210,7 @@
             // 
             this.once_sec_label.AutoSize = true;
             this.once_sec_label.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.once_sec_label.Location = new System.Drawing.Point(281, 51);
+            this.once_sec_label.Location = new System.Drawing.Point(278, 51);
             this.once_sec_label.Margin = new System.Windows.Forms.Padding(3);
             this.once_sec_label.Name = "once_sec_label";
             this.once_sec_label.Size = new System.Drawing.Size(24, 16);
@@ -240,7 +243,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(192, 84);
+            this.label3.Location = new System.Drawing.Point(189, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 16);
@@ -251,7 +254,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(281, 84);
+            this.label4.Location = new System.Drawing.Point(278, 84);
             this.label4.Margin = new System.Windows.Forms.Padding(3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(24, 16);
@@ -273,7 +276,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(192, 118);
+            this.label6.Location = new System.Drawing.Point(189, 118);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(24, 16);
@@ -284,7 +287,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(281, 118);
+            this.label7.Location = new System.Drawing.Point(278, 118);
             this.label7.Margin = new System.Windows.Forms.Padding(3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 16);
@@ -295,17 +298,17 @@
             // 
             this.start_btn.Location = new System.Drawing.Point(3, 3);
             this.start_btn.Name = "start_btn";
-            this.start_btn.Size = new System.Drawing.Size(137, 42);
+            this.start_btn.Size = new System.Drawing.Size(135, 42);
             this.start_btn.TabIndex = 15;
             this.start_btn.Text = "Start";
             this.start_btn.UseVisualStyleBackColor = true;
-            this.start_btn.Click += new System.EventHandler(this.button1_Click);
+            this.start_btn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // stop_btn
             // 
             this.stop_btn.Location = new System.Drawing.Point(3, 153);
             this.stop_btn.Name = "stop_btn";
-            this.stop_btn.Size = new System.Drawing.Size(137, 41);
+            this.stop_btn.Size = new System.Drawing.Size(135, 41);
             this.stop_btn.TabIndex = 16;
             this.stop_btn.Text = "Stop";
             this.stop_btn.UseVisualStyleBackColor = true;
@@ -325,9 +328,9 @@
             "8",
             "9",
             "10"});
-            this.once_min_box.Location = new System.Drawing.Point(146, 51);
+            this.once_min_box.Location = new System.Drawing.Point(144, 51);
             this.once_min_box.Name = "once_min_box";
-            this.once_min_box.Size = new System.Drawing.Size(40, 20);
+            this.once_min_box.Size = new System.Drawing.Size(39, 20);
             this.once_min_box.TabIndex = 17;
             // 
             // twice_min_box
@@ -345,9 +348,9 @@
             "8",
             "9",
             "10"});
-            this.twice_min_box.Location = new System.Drawing.Point(146, 84);
+            this.twice_min_box.Location = new System.Drawing.Point(144, 84);
             this.twice_min_box.Name = "twice_min_box";
-            this.twice_min_box.Size = new System.Drawing.Size(40, 20);
+            this.twice_min_box.Size = new System.Drawing.Size(39, 20);
             this.twice_min_box.TabIndex = 18;
             // 
             // min_box_5
@@ -365,9 +368,9 @@
             "8",
             "9",
             "10"});
-            this.min_box_5.Location = new System.Drawing.Point(146, 118);
+            this.min_box_5.Location = new System.Drawing.Point(144, 118);
             this.min_box_5.Name = "min_box_5";
-            this.min_box_5.Size = new System.Drawing.Size(40, 20);
+            this.min_box_5.Size = new System.Drawing.Size(39, 20);
             this.min_box_5.TabIndex = 19;
             // 
             // once_sec_box
@@ -435,110 +438,10 @@
             "58",
             "59",
             "60"});
-            this.once_sec_box.Location = new System.Drawing.Point(229, 51);
+            this.once_sec_box.Location = new System.Drawing.Point(226, 51);
             this.once_sec_box.Name = "once_sec_box";
             this.once_sec_box.Size = new System.Drawing.Size(46, 20);
             this.once_sec_box.TabIndex = 20;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.lab_audio_5);
-            this.tabPage1.Controls.Add(this.lab_audio_2);
-            this.tabPage1.Controls.Add(this.lab_audio_1);
-            this.tabPage1.Controls.Add(this.btn_set_audio_5);
-            this.tabPage1.Controls.Add(this.btn_set_audio_2);
-            this.tabPage1.Controls.Add(this.txt_audio_5);
-            this.tabPage1.Controls.Add(this.txt_audio_2);
-            this.tabPage1.Controls.Add(this.txt_audio_1);
-            this.tabPage1.Controls.Add(this.btn_set_audio_1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(365, 446);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Setting";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // lab_audio_5
-            // 
-            this.lab_audio_5.AutoSize = true;
-            this.lab_audio_5.Location = new System.Drawing.Point(20, 73);
-            this.lab_audio_5.Name = "lab_audio_5";
-            this.lab_audio_5.Size = new System.Drawing.Size(62, 12);
-            this.lab_audio_5.TabIndex = 8;
-            this.lab_audio_5.Text = "Audio Fifth";
-            // 
-            // lab_audio_2
-            // 
-            this.lab_audio_2.AutoSize = true;
-            this.lab_audio_2.Location = new System.Drawing.Point(20, 47);
-            this.lab_audio_2.Name = "lab_audio_2";
-            this.lab_audio_2.Size = new System.Drawing.Size(68, 12);
-            this.lab_audio_2.TabIndex = 7;
-            this.lab_audio_2.Text = "Audio Twice";
-            // 
-            // lab_audio_1
-            // 
-            this.lab_audio_1.AutoSize = true;
-            this.lab_audio_1.Location = new System.Drawing.Point(20, 21);
-            this.lab_audio_1.Name = "lab_audio_1";
-            this.lab_audio_1.Size = new System.Drawing.Size(64, 12);
-            this.lab_audio_1.TabIndex = 6;
-            this.lab_audio_1.Text = "Audio Once";
-            // 
-            // btn_set_audio_5
-            // 
-            this.btn_set_audio_5.Location = new System.Drawing.Point(274, 70);
-            this.btn_set_audio_5.Name = "btn_set_audio_5";
-            this.btn_set_audio_5.Size = new System.Drawing.Size(74, 19);
-            this.btn_set_audio_5.TabIndex = 5;
-            this.btn_set_audio_5.Text = "Set";
-            this.btn_set_audio_5.UseVisualStyleBackColor = true;
-            this.btn_set_audio_5.Click += new System.EventHandler(this.btn_set_audio_5_Click);
-            // 
-            // btn_set_audio_2
-            // 
-            this.btn_set_audio_2.Location = new System.Drawing.Point(274, 43);
-            this.btn_set_audio_2.Name = "btn_set_audio_2";
-            this.btn_set_audio_2.Size = new System.Drawing.Size(74, 19);
-            this.btn_set_audio_2.TabIndex = 4;
-            this.btn_set_audio_2.Text = "Set";
-            this.btn_set_audio_2.UseVisualStyleBackColor = true;
-            this.btn_set_audio_2.Click += new System.EventHandler(this.btn_set_audio_2_Click);
-            // 
-            // txt_audio_5
-            // 
-            this.txt_audio_5.Location = new System.Drawing.Point(94, 70);
-            this.txt_audio_5.Name = "txt_audio_5";
-            this.txt_audio_5.ReadOnly = true;
-            this.txt_audio_5.Size = new System.Drawing.Size(174, 19);
-            this.txt_audio_5.TabIndex = 3;
-            // 
-            // txt_audio_2
-            // 
-            this.txt_audio_2.Location = new System.Drawing.Point(94, 44);
-            this.txt_audio_2.Name = "txt_audio_2";
-            this.txt_audio_2.ReadOnly = true;
-            this.txt_audio_2.Size = new System.Drawing.Size(174, 19);
-            this.txt_audio_2.TabIndex = 2;
-            // 
-            // txt_audio_1
-            // 
-            this.txt_audio_1.Location = new System.Drawing.Point(94, 18);
-            this.txt_audio_1.Name = "txt_audio_1";
-            this.txt_audio_1.ReadOnly = true;
-            this.txt_audio_1.Size = new System.Drawing.Size(174, 19);
-            this.txt_audio_1.TabIndex = 1;
-            // 
-            // btn_set_audio_1
-            // 
-            this.btn_set_audio_1.Location = new System.Drawing.Point(274, 18);
-            this.btn_set_audio_1.Name = "btn_set_audio_1";
-            this.btn_set_audio_1.Size = new System.Drawing.Size(74, 19);
-            this.btn_set_audio_1.TabIndex = 0;
-            this.btn_set_audio_1.Text = "Set";
-            this.btn_set_audio_1.UseVisualStyleBackColor = true;
-            this.btn_set_audio_1.Click += new System.EventHandler(this.btn_set_audio_1_Click);
             // 
             // twice_sec_box
             // 
@@ -605,7 +508,7 @@
             "58",
             "59",
             "60"});
-            this.twice_sec_box.Location = new System.Drawing.Point(229, 84);
+            this.twice_sec_box.Location = new System.Drawing.Point(226, 84);
             this.twice_sec_box.Name = "twice_sec_box";
             this.twice_sec_box.Size = new System.Drawing.Size(46, 20);
             this.twice_sec_box.TabIndex = 21;
@@ -675,10 +578,143 @@
             "58",
             "59",
             "60"});
-            this.sec_box_5.Location = new System.Drawing.Point(229, 118);
+            this.sec_box_5.Location = new System.Drawing.Point(226, 118);
             this.sec_box_5.Name = "sec_box_5";
             this.sec_box_5.Size = new System.Drawing.Size(46, 20);
             this.sec_box_5.TabIndex = 22;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.clear_fifth);
+            this.tabPage1.Controls.Add(this.clear_twice);
+            this.tabPage1.Controls.Add(this.clear_once);
+            this.tabPage1.Controls.Add(this.lab_audio_5);
+            this.tabPage1.Controls.Add(this.lab_audio_2);
+            this.tabPage1.Controls.Add(this.lab_audio_1);
+            this.tabPage1.Controls.Add(this.btn_set_audio_5);
+            this.tabPage1.Controls.Add(this.btn_set_audio_2);
+            this.tabPage1.Controls.Add(this.txt_audio_5);
+            this.tabPage1.Controls.Add(this.txt_audio_2);
+            this.tabPage1.Controls.Add(this.txt_audio_1);
+            this.tabPage1.Controls.Add(this.btn_set_audio_1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(365, 446);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Setting";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // clear_fifth
+            // 
+            this.clear_fifth.Location = new System.Drawing.Point(308, 69);
+            this.clear_fifth.Name = "clear_fifth";
+            this.clear_fifth.Size = new System.Drawing.Size(51, 19);
+            this.clear_fifth.TabIndex = 10;
+            this.clear_fifth.Text = "Clear";
+            this.clear_fifth.UseVisualStyleBackColor = true;
+            this.clear_fifth.Click += new System.EventHandler(this.Clear_fifth_Click);
+            // 
+            // clear_twice
+            // 
+            this.clear_twice.Location = new System.Drawing.Point(308, 43);
+            this.clear_twice.Name = "clear_twice";
+            this.clear_twice.Size = new System.Drawing.Size(51, 19);
+            this.clear_twice.TabIndex = 10;
+            this.clear_twice.Text = "Clear";
+            this.clear_twice.UseVisualStyleBackColor = true;
+            this.clear_twice.Click += new System.EventHandler(this.Clear_twice_Click);
+            // 
+            // clear_once
+            // 
+            this.clear_once.Location = new System.Drawing.Point(308, 18);
+            this.clear_once.Name = "clear_once";
+            this.clear_once.Size = new System.Drawing.Size(51, 19);
+            this.clear_once.TabIndex = 9;
+            this.clear_once.Text = "Clear";
+            this.clear_once.UseVisualStyleBackColor = true;
+            this.clear_once.Click += new System.EventHandler(this.Clear_once_Click);
+            // 
+            // lab_audio_5
+            // 
+            this.lab_audio_5.AutoSize = true;
+            this.lab_audio_5.Location = new System.Drawing.Point(6, 73);
+            this.lab_audio_5.Name = "lab_audio_5";
+            this.lab_audio_5.Size = new System.Drawing.Size(62, 12);
+            this.lab_audio_5.TabIndex = 8;
+            this.lab_audio_5.Text = "Audio Fifth";
+            // 
+            // lab_audio_2
+            // 
+            this.lab_audio_2.AutoSize = true;
+            this.lab_audio_2.Location = new System.Drawing.Point(6, 47);
+            this.lab_audio_2.Name = "lab_audio_2";
+            this.lab_audio_2.Size = new System.Drawing.Size(68, 12);
+            this.lab_audio_2.TabIndex = 7;
+            this.lab_audio_2.Text = "Audio Twice";
+            // 
+            // lab_audio_1
+            // 
+            this.lab_audio_1.AutoSize = true;
+            this.lab_audio_1.Location = new System.Drawing.Point(6, 21);
+            this.lab_audio_1.Name = "lab_audio_1";
+            this.lab_audio_1.Size = new System.Drawing.Size(64, 12);
+            this.lab_audio_1.TabIndex = 6;
+            this.lab_audio_1.Text = "Audio Once";
+            // 
+            // btn_set_audio_5
+            // 
+            this.btn_set_audio_5.Location = new System.Drawing.Point(256, 68);
+            this.btn_set_audio_5.Name = "btn_set_audio_5";
+            this.btn_set_audio_5.Size = new System.Drawing.Size(46, 19);
+            this.btn_set_audio_5.TabIndex = 5;
+            this.btn_set_audio_5.Text = "Set";
+            this.btn_set_audio_5.UseVisualStyleBackColor = true;
+            this.btn_set_audio_5.Click += new System.EventHandler(this.Btn_set_audio_5_Click);
+            // 
+            // btn_set_audio_2
+            // 
+            this.btn_set_audio_2.Location = new System.Drawing.Point(256, 43);
+            this.btn_set_audio_2.Name = "btn_set_audio_2";
+            this.btn_set_audio_2.Size = new System.Drawing.Size(46, 19);
+            this.btn_set_audio_2.TabIndex = 4;
+            this.btn_set_audio_2.Text = "Set";
+            this.btn_set_audio_2.UseVisualStyleBackColor = true;
+            this.btn_set_audio_2.Click += new System.EventHandler(this.Btn_set_audio_2_Click);
+            // 
+            // txt_audio_5
+            // 
+            this.txt_audio_5.Location = new System.Drawing.Point(76, 69);
+            this.txt_audio_5.Name = "txt_audio_5";
+            this.txt_audio_5.ReadOnly = true;
+            this.txt_audio_5.Size = new System.Drawing.Size(174, 19);
+            this.txt_audio_5.TabIndex = 3;
+            // 
+            // txt_audio_2
+            // 
+            this.txt_audio_2.Location = new System.Drawing.Point(76, 44);
+            this.txt_audio_2.Name = "txt_audio_2";
+            this.txt_audio_2.ReadOnly = true;
+            this.txt_audio_2.Size = new System.Drawing.Size(174, 19);
+            this.txt_audio_2.TabIndex = 2;
+            // 
+            // txt_audio_1
+            // 
+            this.txt_audio_1.Location = new System.Drawing.Point(76, 18);
+            this.txt_audio_1.Name = "txt_audio_1";
+            this.txt_audio_1.ReadOnly = true;
+            this.txt_audio_1.Size = new System.Drawing.Size(174, 19);
+            this.txt_audio_1.TabIndex = 1;
+            // 
+            // btn_set_audio_1
+            // 
+            this.btn_set_audio_1.Location = new System.Drawing.Point(256, 18);
+            this.btn_set_audio_1.Name = "btn_set_audio_1";
+            this.btn_set_audio_1.Size = new System.Drawing.Size(46, 19);
+            this.btn_set_audio_1.TabIndex = 0;
+            this.btn_set_audio_1.Text = "Set";
+            this.btn_set_audio_1.UseVisualStyleBackColor = true;
+            this.btn_set_audio_1.Click += new System.EventHandler(this.Btn_set_audio_1_Click);
             // 
             // main_form
             // 
@@ -738,5 +774,8 @@
         private System.Windows.Forms.ComboBox once_sec_box;
         private System.Windows.Forms.ComboBox twice_sec_box;
         private System.Windows.Forms.ComboBox sec_box_5;
+        private System.Windows.Forms.Button clear_fifth;
+        private System.Windows.Forms.Button clear_twice;
+        private System.Windows.Forms.Button clear_once;
     }
 }

@@ -19,3 +19,4 @@ C:\Users\toyu-\Documents\VisualStudio2015\Projects\BELL-PRES\BELL-PRES\obj\Debug
 C:\Users\toyu-\Documents\VisualStudio2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.csproj.ResolveComReference.cache
 C:\Users\toyu-\Documents\VisualStudio2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.exe
 C:\Users\toyu-\Documents\VisualStudio2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.pdb
+C:\Users\toyu-\Documents\Visual Studio 2015\Projects\BELL-PRES\BELL-PRES\obj\Debug\BELL-PRES.csproj.CoreCompileInputs.cache

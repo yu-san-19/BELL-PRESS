@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.SmallBasic.Library;
-using System.Diagnostics;
 using System.Threading;
 
 namespace BELL_PRES
@@ -98,7 +89,7 @@ namespace BELL_PRES
                 }
             }
         }
-        private void once_Click(object sender, EventArgs e)
+        private void Once_Click(object sender, EventArgs e)
         {
             Task task_playsound = Task.Run(() =>
             {
@@ -106,7 +97,7 @@ namespace BELL_PRES
             });
         }
 
-        private void twice_Click(object sender, EventArgs e)
+        private void Twice_Click(object sender, EventArgs e)
         {
             Task task_playsound = Task.Run(() =>
             {
@@ -114,7 +105,7 @@ namespace BELL_PRES
             });
         }
 
-        private void time_5_Click(object sender, EventArgs e)
+        private void Time_5_Click(object sender, EventArgs e)
         {
             Task task_playsound = Task.Run(() =>
             {
@@ -122,15 +113,15 @@ namespace BELL_PRES
             });
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("T１：" + once_min_box.SelectedItem.ToString() + "<br/> T2:" + twice_min_box.SelectedItem.ToString() + "<br/> T3:" + min_box_5.SelectedItem.ToString(),
-                "確認!", MessageBoxButtons.OK);
+           // MessageBox.Show("T１：" + once_min_box.SelectedItem.ToString() + "<br/> T2:" + twice_min_box.SelectedItem.ToString() + "<br/> T3:" + min_box_5.SelectedItem.ToString(),
+              //  "確認!", MessageBoxButtons.OK);
             int time_1 = ((int.Parse(once_min_box.SelectedItem.ToString()) * 60) + int.Parse(once_sec_box.SelectedItem.ToString())) * 1000;
             int time_2 = ((int.Parse(twice_min_box.SelectedItem.ToString()) * 60) + int.Parse(twice_sec_box.SelectedItem.ToString())) * 1000;
             int time_3 = ((int.Parse(min_box_5.SelectedItem.ToString()) * 60) + int.Parse(sec_box_5.SelectedItem.ToString())) * 1000;
 
-            MessageBox.Show(time_1.ToString() + time_2.ToString() + time_3.ToString(), "確認", MessageBoxButtons.OK);
+            //MessageBox.Show(time_1.ToString() + time_2.ToString() + time_3.ToString(), "確認", MessageBoxButtons.OK);
 
             Task task_play_sound_auto = Task.Run(() =>
             {
@@ -145,7 +136,7 @@ namespace BELL_PRES
             });
         }
 
-        private void btn_set_audio_1_Click(object sender, EventArgs e)
+        private void Btn_set_audio_1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "音声ファイル(*.mp3;*.wav)|*.mp3;*.wav";
@@ -159,7 +150,7 @@ namespace BELL_PRES
             }
         }
 
-        private void btn_set_audio_2_Click(object sender, EventArgs e)
+        private void Btn_set_audio_2_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "音声ファイル(*.mp3;*.wav)|*.mp3;*.wav";
@@ -173,7 +164,7 @@ namespace BELL_PRES
             }
         }
 
-        private void btn_set_audio_5_Click(object sender, EventArgs e)
+        private void Btn_set_audio_5_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "音声ファイル(*.mp3;*.wav)|*.mp3;*.wav";
@@ -185,6 +176,27 @@ namespace BELL_PRES
                 Properties.Settings.Default.PlaySoundFile_3 = ofd.FileName;
                 Properties.Settings.Default.Save();
             }
+        }
+
+        private void Clear_fifth_Click(object sender, EventArgs e)
+        {
+            txt_audio_5.Text = null;
+            Properties.Settings.Default.PlaySoundFile_3 = null;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Clear_twice_Click(object sender, EventArgs e)
+        {
+            txt_audio_2.Text = null;
+            Properties.Settings.Default.PlaySoundFile_2 = null;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Clear_once_Click(object sender, EventArgs e)
+        {
+            txt_audio_1.Text = null;
+            Properties.Settings.Default.PlaySoundFile_1 = null;
+            Properties.Settings.Default.Save();
         }
     }
 }
