@@ -1,29 +1,10 @@
-# README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# BELL-PRESS
 
-### What is this repository for? ###
+なんてこともないただのタイムキーパーとも言えない装置。
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+一応完成形ですが、まだ足りない機能を次々と乗っけていきます。
 
-### How do I get set up? ###
+下の記事を参照。
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+[「自動で卓上ベルの音を発表会で鳴らしてくれる機」を頑張って作っているので、学習したことをまとめる。-悠々としたTECH日記](http://yu-yu-nisshi.hateblo.jp/entry/2017/12/14/221511)
