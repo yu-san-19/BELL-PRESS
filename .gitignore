@@ -286,3 +286,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+#MP3 Music File
+bin/Debug/*.mp3
